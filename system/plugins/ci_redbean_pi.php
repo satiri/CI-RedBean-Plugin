@@ -172,9 +172,9 @@ class RedbeanModel
 
 
 	/**
-	 * Returns an instance of the class of the $className passed in..
+	 * Returns an instance of the class of the $className passed in.
 	 * That means if you create a class named "Car" you will recieve an
-	 * instance of "Car" when calling "Car::load();" if an item with the
+	 * instance of "Car" when calling "Car::load('Car');" if an item with the
 	 * provided id is persisted in the database.
 	 *
 	 * @param string $className
@@ -191,21 +191,25 @@ class RedbeanModel
     return new $className($object, $className);
   }
 
-    
-    /**
-     * A proxy method to tunnel all set operations to the embedded RedBean
-     * object.
-     */
+
+	/**
+	 * A proxy method to tunnel all set operations to the embedded RedBean
+	 * object.
+	 * @param $name
+	 * @param $value
+	 */
   public function __set($name, $value)
   {
     $this->redBeanObject->$name = $value;
   }
 
 
-    /**
-     * A proxy method to tunnel all get operations to the embedded RedBean
-     * object.
-     */
+	/**
+	 * A proxy method to tunnel all get operations to the embedded RedBean
+	 * object.
+	 * @param $name
+	 * @return RedBean_OODB
+	 */
   public function __get($name)
   {
     return $this->redBeanObject->$name;
