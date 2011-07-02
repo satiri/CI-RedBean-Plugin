@@ -1,7 +1,7 @@
 <?php
 
 /**
- * This is a plugin to integrate the RedBean library into the web framework
+ * This is a library to integrate the RedBean library into the web framework
  * CodeIgniter. It provides a class which your application's models can extend
  * to inherit the functionality needed to use the redbean library.
  *
@@ -31,13 +31,13 @@ require_once 'rb.php';
  * but RedBean does not run with 4.X anyway.
  * @param $class
  */
-function ci_redbean_pi_autoload($class)
+function ci_redbean_autoload($class)
 {
     $filename = APPPATH . 'models/' . $class . EXT;
     if (file_exists($filename))
       require($filename);
 }
-spl_autoload_register('ci_redbean_pi_autoload');
+spl_autoload_register('ci_redbean_autoload');
 
 
 
