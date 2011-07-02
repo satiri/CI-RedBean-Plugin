@@ -171,18 +171,18 @@ class RedbeanModel
     }
 
 
-  /**
-    * Returns an instance of the class the static method was called on.
-    * That means if you create a class named "Car" you will recieve an
-    * instance of "Car" when calling "Car::load();" if an item with the
-    * provided id is persisted in the database.
-    * 
-    * @param integer $id
-    * @return Instance of the called class
-    */
-  public static function load($id)
+	/**
+	 * Returns an instance of the class of the $className passed in..
+	 * That means if you create a class named "Car" you will recieve an
+	 * instance of "Car" when calling "Car::load();" if an item with the
+	 * provided id is persisted in the database.
+	 *
+	 * @param string $className
+	 * @param integer $id
+	 * @return Instance of the requested class
+	 */
+  public static function load($className, $id)
   {
-    $className = get_called_class();
     if (!self::$redbeanInstance)
     {
             self::$redbeanInstance = self::createRedbeanInstance();
