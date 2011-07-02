@@ -25,11 +25,11 @@
 require_once 'rb.php';
 
 
-
 /**
  * To have nice auto loading in the controller, the plugin provides an
  * autoloader by using the 5.X spl function. This will break PHP4 compatibility,
  * but RedBean does not run with 4.X anyway.
+ * @param $class
  */
 function ci_redbean_pi_autoload($class)
 {
