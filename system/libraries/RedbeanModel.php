@@ -173,7 +173,7 @@ class RedbeanModel
 
 	/**
 	 * Returns an instance of the class of the $className passed in.
-	 * That means if you create a class named "Car" you will recieve an
+	 * That means if you create a class named "Car" you will receive an
 	 * instance of "Car" when calling "Car::load('Car');" if an item with the
 	 * provided id is persisted in the database.
 	 *
