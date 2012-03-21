@@ -1,16 +1,17 @@
 h1. Codeigniter-RedBean-Plugin
 
-This is a plugin that enables you to use the RedbeanPHP library in your Codeigniter projects. It is espacially usefull for database prototyping.
+Ini adalah plugin yang mengkoneksikan ReadBeanPHP ( Readbean PHP adalah ORM - Object Relational Mapping ) 
+ke project CodeIginiter anda. Untuk Download ReadBeanPHP silahkan ke http://readbeanphp.com. Untuk Codeigniter , 
+silahkan ke http://codeigniter.com 
 
-Redbean is available at: "RedBeanPHP.com":http://redbeanphp.com/ while CodeIgniter can be downloaded from "CodeIgniter.com":http://codeigniter.com/ .
 
 
-h2. Installation
+h2. Instalasi
 
-# *Download* this plugin and extract into your CI project (this will put two files into your @/system/plugins@ folder.
-# *Enable* the @ci_redbean@ plugin by adding it to your autoloading config (@/system/application/config/autoload.php@ line 66).
-# *Configure your database* as you always do in CI.
-# *Create a model* that extends the @RedbeanModel@ class.
+# *Download* Plugin ini dan ektraklah ke Project CI anda (akan ada 2 file yang terbentuk di @/system/plugin@ folder.
+# *Enable* @ci_readbean@ plugin dengan menambahkan ke autoload, yaitu file @application/config/autoload.php@ bagian library
+# *Konfigurasi* database seperti biasa
+# *Buat model* yang meng extends  class @RedbeanModel@ .
 
 
 h2. Usage
