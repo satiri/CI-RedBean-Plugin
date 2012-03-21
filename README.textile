@@ -17,7 +17,7 @@ h2. Instalasi
 h2. Penggunaan
 
 Untuk menggunakan fungsi - fungsi baru, silahkan buat model didalam kontroller anda, tambahkan property dan gunakan @save()@ untuk menyimpan ke database.
-Perubahan property pada class akan secara otomatis merubah struktur table, jadi gak perlu liat - liat phpmyadmin lafi
+Perubahan property pada class akan secara otomatis merubah struktur table, jadi gak perlu liat - liat phpmyadmin lagi
 
 Jika ingin memastikan tidak ada perubahan dalam struktur table gunakan opsi dibawah ini pada file database.php 
 
